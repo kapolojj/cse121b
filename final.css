@@ -1,4 +1,4 @@
-/* Add your custom CSS styles here */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -49,4 +49,10 @@ main {
 .game-publisher {
     font-size: 1.2rem;
     color: #777;
+}
+.game-thumbnail img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px; /* Set the maximum width */
+    max-height: 250px; /* Set the maximum height */
 }
