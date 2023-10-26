@@ -51,8 +51,7 @@ function displayGames(games) {
 sortBySelect.addEventListener('change', fetchGames);
 fetchGames();
 
-    /* ARRAY METHODS - Functional Programming */
+
     let CategoryArray = ["Action","Shooter","Strategy","Sports","Racing"];
-    /* Output Source Array */
     document.querySelector('#category_games').textContent = CategoryArray;
     
