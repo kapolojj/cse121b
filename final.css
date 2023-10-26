@@ -61,3 +61,41 @@ main {
     color: #f51111;
     padding: 20px;
 }
+/* Style for the main container */
+#category_1 {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the title */
+#category_1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for the gaming category text */
+#category_1 p {
+    font-size: 16px;
+    color: #555;
+}
+
+.sort-options {
+    margin-top: 20px;
+}
+
+.sort-options label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sort-options select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
