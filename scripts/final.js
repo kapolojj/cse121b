@@ -1,4 +1,5 @@
 const gamesSection = document.getElementById('games');
+const sortBySelect = document.getElementById('sortBy');
 
 async function fetchGames() {
     try {
@@ -15,7 +16,20 @@ async function fetchGames() {
 }
 
 function displayGames(games) {
-    games.forEach((game) => {
+    gamesSection.innerHTML = '';
+
+    const sortBy = sortBySelect.value;
+    const sortedGames = [...games];
+    sortedGames.sort((a, b) => {
+        if (b[sortBy] < a[sortBy]) {
+            return -1;
+        } else if (a[sortBy] > b[sortBy]) {
+            return 1;
+        }
+        return 0;
+    });
+
+    sortedGames.forEach((game) => {
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
 
@@ -30,6 +44,15 @@ function displayGames(games) {
         gameCard.innerHTML = gameDetails;
         gamesSection.appendChild(gameCard);
     });
+
+
 }
 
+sortBySelect.addEventListener('change', fetchGames);
 fetchGames();
+
+    /* ARRAY METHODS - Functional Programming */
+    let CategoryArray = ["Action","Shooter","Strategy","Sports","Racing"];
+    /* Output Source Array */
+    document.querySelector('#category_games').textContent = CategoryArray;
+    
