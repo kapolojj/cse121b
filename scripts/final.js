@@ -1,5 +1,3 @@
-// Fetch game data from the API and display it in the grid
-
 const gamesSection = document.getElementById('games');
 
 async function fetchGames() {
