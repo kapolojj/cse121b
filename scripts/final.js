@@ -24,6 +24,7 @@ function displayGames(games) {
             <div class="game-platform">${game.platform}</div>
             <div class="game-publisher">${game.publisher}</div>
             <div class="game-thumbnail"><img src="${game.thumbnail}" alt="${game.title} Thumbnail"></div>
+            <div class="game-release_date">${game.release_date}</div>
         `;
 
         gameCard.innerHTML = gameDetails;
